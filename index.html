@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Dreams - Студия разработки игр</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function() {
+          emailjs.init("YOUR_PUBLIC_KEY"); // Замените на ваш публичный ключ
+       })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="pixel-text">Pixel</span>
+                        <span class="dreams-text">Dreams</span>
+                    </a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" id="closeMenu"></i>
+                    <ul>
+                        <li><a href="#home" class="active">Главная</a></li>
+                        <li><a href="#games">Наши игры</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#team">Команда</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" id="openMenu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Создаем <span class="highlight">пиксельные</span> миры ваших мечтаний</h1>
+                <p>Независимая студия разработки игр, специализирующаяся на создании уникальных пиксельных игр с захватывающими историями и геймплеем</p>
+                <div class="hero-buttons">
+                    <a href="#games" class="btn btn-primary">Наши игры</a>
+                    <a href="#contact" class="btn btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="pixel-character"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">Наши <span class="highlight">игры</span></h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('images/game1.jpg');">
+                        <div class="game-overlay">
+                            <a href="#" class="btn btn-primary" data-game="game1">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Pixel Adventure</h3>
+                        <p>Захватывающая пиксельная RPG с открытым миром и уникальной боевой системой.</p>
+                        <div class="game-platforms">
+                            <i class="fab fa-steam" title="Steam"></i>
+                            <i class="fab fa-playstation" title="PlayStation"></i>
+                            <i class="fab fa-xbox" title="Xbox"></i>
+                            <i class="fab fa-nintendo-switch" title="Nintendo Switch"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('images/game2.jpeg');">
+                        <div class="game-overlay">
+                            <a href="#" class="btn btn-primary" data-game="game2">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Cosmic Pixels</h3>
+                        <p>Космическая стратегия с элементами roguelike и процедурной генерацией галактик.</p>
+                        <div class="game-platforms">
+                            <i class="fab fa-steam" title="Steam"></i>
+                            <i class="fab fa-windows" title="Windows"></i>
+                            <i class="fab fa-apple" title="macOS"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('images/game3.jpeg');">
+                        <div class="game-overlay">
+                            <a href="#" class="btn btn-primary" data-game="game3">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Pixel Dungeon Master</h3>
+                        <p>Динамичный dungeon crawler с уникальной системой создания подземелий.</p>
+                        <div class="game-platforms">
+                            <i class="fab fa-steam" title="Steam"></i>
+                            <i class="fab fa-android" title="Android"></i>
+                            <i class="fab fa-apple" title="iOS"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">О <span class="highlight">студии</span></h2>
+                <p>Pixel Dreams — это независимая студия разработки игр, основанная в 2018 году группой энтузиастов, объединенных любовью к пиксельной графике и ретро-играм.</p>
+                <p>Наша миссия — создавать уникальные игровые миры, сочетающие в себе ностальгическую пиксельную эстетику с современными игровыми механиками и захватывающими сюжетами.</p>
+                <p>За 5 лет существования мы выпустили 7 игр, получивших признание как игроков, так и критиков. Наши проекты отличаются вниманием к деталям, проработанным геймплеем и особой атмосферой, которая погружает игроков в удивительные пиксельные миры.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-text">Выпущенных игр</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-text">Наград</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2M+</span>
+                        <span class="stat-text">Игроков</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20</span>
+                        <span class="stat-text">Сотрудников</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="pixel-studio"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Наша <span class="highlight">команда</span></h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/team1.jpg');"></div>
+                    <h3>Алексей Петров</h3>
+                    <p class="member-role">Основатель и креативный директор</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/team2.jpg');"></div>
+                    <h3>Мария Иванова</h3>
+                    <p class="member-role">Ведущий геймдизайнер</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/team3.jpg');"></div>
+                    <h3>Дмитрий Соколов</h3>
+                    <p class="member-role">Технический директор</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/team4.jpg');"></div>
+                    <h3>Елена Козлова</h3>
+                    <p class="member-role">Ведущий художник</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-artstation"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-cta">
+                <h3>Хотите присоединиться к нашей команде?</h3>
+                <p>Мы всегда ищем талантливых и увлеченных людей!</p>
+                <a href="#contact" class="btn btn-primary">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с <span class="highlight">нами</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>ул. Пиксельная, 8, Москва, Россия</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@pixeldreams.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-steam"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Тема">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="pixel-text">Pixel</span>
+                        <span class="dreams-text">Dreams</span>
+                    </a>
+                    <p>Создаем пиксельные миры ваших мечтаний</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Навигация</h3>
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#games">Наши игры</a></li>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#team">Команда</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Игры</h3>
+                        <ul>
+                            <li><a href="#">Pixel Adventure</a></li>
+                            <li><a href="#">Cosmic Pixels</a></li>
+                            <li><a href="#">Pixel Dungeon Master</a></li>
+                            <li><a href="#">Все игры</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Правовая информация</h3>
+                        <ul>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Политика возврата</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pixel Dreams. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <!-- Изображение будет добавлено через JavaScript -->
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-description">В разработке...</p>
+                    <div class="modal-platforms">
+                        <!-- Платформы будут добавлены через JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
